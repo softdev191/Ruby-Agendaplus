@@ -1,0 +1,46 @@
+<div class="card mt-3">
+  <div class="card-body">
+    <div id="<%= dom_id contact %>">
+      <p>
+        <strong>Full name:</strong>
+        <%= contact.full_name %>
+      </p>
+
+      <p>
+        <strong>Cpf:</strong>
+        <%= contact.cpf %>
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <%= contact.email %>
+      </p>
+
+      <p>
+        <strong>Birthday:</strong>
+        <%= contact.birthday %>
+      </p>
+
+      <p>Numbers of Contact</p>
+      <% contact.phones.each do |phone| %>
+        <p>
+          <strong><%= phone.number %></strong>
+        </p>
+        <p>
+          <span><strong>Whatsapp?</strong> <%= phone.whatsapp? %></span>
+        </p>
+      <% end %>
+    </div>
+    <div class="card-footer bg-transparent">
+      <div class="row no-gutters">
+        <div class="col-md-6 d-flex">
+          <%= link_to "Edit", edit_contact_path(contact), class: "btn btn-dark" %>
+        </div>
+        <div class="col-md-6 d-flex align-items-center justify-content-end">
+          <%= link_to "Addresses", contact_addresses_path(contact), class: "btn btn-dark" %>
+          <%= link_to "New address", new_contact_address_path(contact), class: "btn btn-secondary" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="row no-gutters">
+        <div class="col-sm-8">
+          <h1>New contact</h1>
+        </div>
+        <div class="col-sm-4 d-flex align-items-center justify-content-end">
+          <%= link_to "Back", contacts_path, class: "btn btn-light" %>
+        </div>
+      </div>
+      <%= render "form", contact: @contact %>
+    </div>
+  </div>
+</div>

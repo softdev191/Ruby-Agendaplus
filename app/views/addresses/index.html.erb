@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="row no-gutters">
+        <div class="col-sm-4">
+          <h3>Addresses</h3>
+        </div>
+        <div class="col-sm-8 d-flex align-items-center justify-content-end">
+          <%= link_to "Back to contacts", contacts_path, class: "btn btn-light" %>
+          <%= link_to "New address", new_contact_address_path(@contact), class: "btn btn-dark" %>
+        </div>
+
+        <div id="addresses">
+          <% @addresses.each do |address| %>
+            <%= render address %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

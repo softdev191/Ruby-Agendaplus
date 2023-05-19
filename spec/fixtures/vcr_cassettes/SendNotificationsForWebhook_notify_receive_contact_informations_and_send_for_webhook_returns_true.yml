@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://webhook.site/f60d8508-8d06-4188-a0a9-03378b5a2d5b
+    body:
+      encoding: UTF-8
+      string: contact%5Bid%5D=1&contact%5Bnome%5D=Peter%20Parker&contact%5Bemail%5D=spider.man%40marvel.com&contact%5Btelefone%5D%5B%5D%5Bnumber%5D=85999999999&contact%5Btelefone%5D%5B%5D%5Bwhatsapp%5D=false
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - 7aee5870-1e30-4336-bd86-4710aa39d188
+      X-Token-Id:
+      - f60d8508-8d06-4188-a0a9-03378b5a2d5b
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Sun, 19 Feb 2023 18:38:21 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+  recorded_at: Sun, 19 Feb 2023 18:38:21 GMT
+recorded_with: VCR 6.1.0

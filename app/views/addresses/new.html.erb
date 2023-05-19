@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="row no-gutters mt-3">
+        <div class="col-sm-8">
+          <h3>New address</h3>
+        </div>
+        <div class="col-sm-4">
+          <%= link_to "Back to addresses", contact_addresses_path(@contact), class: "btn btn-light" %>
+        </div>
+      </div>
+      <%= render "form", address: @address %>
+    </div>
+  </div>
+</div>

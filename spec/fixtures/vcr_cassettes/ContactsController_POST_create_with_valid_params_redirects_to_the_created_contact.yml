@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://webhook.site/f60d8508-8d06-4188-a0a9-03378b5a2d5b
+    body:
+      encoding: UTF-8
+      string: contact%5Bid%5D=7&contact%5Bnome%5D=Bruce%20Wayne&contact%5Bemail%5D=bruce.wayne%40dc.com
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - 42d3e09f-1e62-4df8-a8b8-58bd5d0e3d63
+      X-Token-Id:
+      - f60d8508-8d06-4188-a0a9-03378b5a2d5b
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Sun, 19 Feb 2023 19:20:43 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+  recorded_at: Sun, 19 Feb 2023 19:20:43 GMT
+recorded_with: VCR 6.1.0
